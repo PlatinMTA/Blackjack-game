@@ -12,16 +12,25 @@
         <h1>Blackjack</h1>
       </div>
       <div class="game__box">
-        <div class="game__box-table">This is the table</div>
+        <div class="game__box-table">
+          <div class="game__box-table-cards">
+            <div class="game__box-cards-dealer" id="game__box-dealer"></div>
+            <div class="game__box-points-dealer">
+              Dealer: <span id="dealer-result">0</span>
+            </div>
+            <div class="game__box-cards-player" id="game__box-player"></div>
+            <div class="game__box-points-player">
+              You: <span id="player-result">0</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="game__buttons">
         <input class="game__buttons-input" type="text" />
-        <button class="game__buttons-button" onclick="playGame()" id="bet">
-          Bet
-        </button>
-        <button class="game__buttons-button" id="play">Play</button>
-        <button class="game__buttons-button" id="stand">Stand</button>
-        <button class="game__buttons-button" id="hit">Hit</button>
+        <button class="game__buttons-button" id="bet">Bet</button>
+        <button class="game__buttons-button" id="deal-button">deal</button>
+        <button class="game__buttons-button" id="stand-button">Stand</button>
+        <button class="game__buttons-button" id="hit-button">Hit</button>
       </div>
       <div class="game__stats">
         <h3>Balance: <b>$</b><span id="game-money">1000</span></h3>
@@ -29,6 +38,17 @@
         <h3><a href="#">History</a></h3>
       </div>
     </div>
-    <script src="./script.js" type="module"></script>
+    <script src="./blackjack.js"></script>
   </body>
 </html>
+
+<!--Notas en Desarrollo
+
+> fix card
+> finish styling card
+> fixed cards element
+> show a series of cards
+> animate showing cards
+> make the game script
+
+-->
